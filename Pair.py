@@ -35,7 +35,7 @@ class Pair:
     def enter_nucleotides(self):
         while not self.nucleotides:
             try:
-                nucleotide_string = input("Please enter a group of nucleotides (a/t/g/c/A/T/G/C)")
+                nucleotide_string = input("Please enter a group of nucleotides (a/t/g/c/A/T/G/C)\n")
                 for nucleotide in nucleotide_string:
                     self.nucleotides.append(self.nucleotide_dict[nucleotide])
             except KeyError:
